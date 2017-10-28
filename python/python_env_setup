@@ -1,0 +1,26 @@
+
+
+enter_anaconda
+source activate python3  // virtual env
+conda env list
+
+Pexpect allows easy control of interactive console applications.
+
+Pexpect is a pure Python module for spawning child applications; controlling them; and responding to expected patterns in their output. Pexpect works like Don Libes’ Expect. Pexpect allows your script to spawn a child application and control it as if a human were typing commands.
+
+Pexpect can be used for automating interactive applications such as ssh, ftp, passwd, telnet, etc. It can be used to a automate setup scripts for duplicating software package installations on different servers. It can be used for automated software testing. Pexpect is in the spirit of Don Libes’ Expect, but Pexpect is pure Python.
+
+
+mkvirtualenv -p /usr/bin/python3 wordaligner  // to create python environment
+
+workon  // displays python environments
+
+workon wordaligner // to use wordaligner environment
+deactivate // to get out of environment
+
+rmvirtualenv test_env01  // to remove environment
+
+
+
+
+

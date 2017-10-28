@@ -1,0 +1,51 @@
+# How to import in python from different directory?
+
+Directory strucutre:
+
+   wordaligner:
+            Aligner.py
+            tests/test_file.py 
+
+   How to import Aligner.py in test_file.py 
+	
+   i. first; add __init_.py file , can be blank also(you can load here instead of loading in test_file.py or in Aligner.py
+
+New directory strucuter:
+            Aligner.py
+            __init__.py
+            tests\test_file.py
+            __init__.py
+
+In test_file.py 
+     from ..Aligner import *
+
+
+Another Example::
+
+Guido has Pronounced [1] that relative imports will use leading dots. A "single leading dot" indicates a relative import, "starting with the current package". "Two or more leading dots" give a "relative import to the parent(s) of the current package", "one level per dot after the first". __init__.py shows subpackage
+
+package/
+    __init__.py
+    subpackage1/
+        __init__.py
+        moduleX.py
+        moduleY.py
+    subpackage2/
+        __init__.py
+        moduleZ.py
+    moduleA.py
+
+
+Assuming that the current file is either moduleX.py or subpackage1/__init__.py, following are correct usages of the new syntax:
+
+from .moduleY import spam
+from .moduleY import spam as ham
+from . import moduleY
+from ..subpackage1 import moduleY
+from ..subpackage2.moduleZ import eggs
+from ..moduleA import foo
+from ...package import bar
+from ...sys import path
+
+Reference::
+     https://www.python.org/dev/peps/pep-0328/

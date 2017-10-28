@@ -1,0 +1,32 @@
+create filename with  test_  
+
+create function with name suffix test_
+
+python -m pytest // it searches file with test_ suffix and test that function
+or 
+py.test 
+
+** To test particular file:
+	py.test file_name
+
+** To check which methods were tested
+
+python -m pytest -v // -v for verbose
+
+
+** we can also test one particular function; by putting condition 
+import pytest // in test file
+
+before function starts; write: @pytest.mark.skip(reason = "optional reason")
+
+you can see that run while running test:
+	pytest -v -rxs         
+
+
+** you also test particular function ; 
+pytest -k multiply  // it will test function having name "multiply" in that
+
+pytest -k multiple -v // for more summary
+
+
+
