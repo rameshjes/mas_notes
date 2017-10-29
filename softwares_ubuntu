@@ -1,0 +1,3 @@
+To install sticky note:
+	sudo apt-get update
+	sudo apt-get install xpad
