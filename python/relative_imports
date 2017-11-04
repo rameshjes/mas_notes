@@ -1,0 +1,22 @@
+ValueError: Attempted relative import in non-package
+
+Directory structure::
+
+word_aligner
+  	Resource/ 
+		__init__.py
+		ppdb-1.0-xxxl-lexical.extended.synonyms.uniquepairs
+		load.py
+	config.py
+	example_align.py
+	wordAligner.py
+	wordSim.py
+
+Inside wordSim.py: I was written
+	from config.py import * (working fine)
+	from .Resources import * (gave me error, this should word but may be python was not updating packages and not considering Resource as package even __init__.py was there, but __init__.pyc was not there therefore, I went outside of word_aligner main directory and used "python -m word_aligner.Resource.__init__.py then __init__.pyc was generated, but still was not working)
+
+	then again I went outside word_aligner and executed "python -m word_aligner.wordSim" (not.py) (inside file i wrote; from config import * , from Resources import *)
+
+	
+	
