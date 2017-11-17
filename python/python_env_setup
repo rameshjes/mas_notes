@@ -11,16 +11,25 @@ Pexpect is a pure Python module for spawning child applications; controlling the
 Pexpect can be used for automating interactive applications such as ssh, ftp, passwd, telnet, etc. It can be used to a automate setup scripts for duplicating software package installations on different servers. It can be used for automated software testing. Pexpect is in the spirit of Don Libes’ Expect, but Pexpect is pure Python.
 
 
-mkvirtualenv -p /usr/bin/python3 wordaligner  // to create python environment
+For python 3::
 
-workon  // displays python environments
+	mkvirtualenv -p /usr/bin/python3 wordaligner  // to create python environment
 
-workon wordaligner // to use wordaligner environment
-deactivate // to get out of environment
+	workon  // displays python environments
 
-rmvirtualenv test_env01  // to remove environment
+	workon wordaligner // to use wordaligner environment
+	deactivate // to get out of environment
 
+	rmvirtualenv test_env01  // to remove environment
 
+For python 2:: 
 
+	mkvirtualenv -p /usr/bin/python wordaligner  // to create python environment
 
+	workon  // displays python environments
+
+	workon wordaligner // to use wordaligner environment
+	deactivate // to get out of environment
+
+	rmvirtualenv test_env01  // to remove environment
 
