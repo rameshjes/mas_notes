@@ -1,0 +1,112 @@
+Installation Nautilus
+
+    sudo apt-get install nautilus-open-terminal
+    Restart pc, it will work
+
+Install chromium 
+    
+    Go to ubuntu software center
+    Type Chromium
+
+Anaconda
+
+	Download python 2.7 version from https://www.anaconda.com/download/#linux
+	You will get .sh file
+	Go to terminal, make it executable (chmod +x (file_location)Anaconda2-5.0.1-Linux-x86_64.sh) 
+	Run it from terminal (./Anaconda2-5.0.1-Linux-x86_64.sh)
+        It also ask to update Anaconda in bashrc(just press yes it does automatically)	
+	Go to ~/.bashrc (open using vim or nano) to check path is added
+        source ~/.bashrc
+	Type "jupyter-notebook" on terminal
+
+	If you installed anaconda, then you can create other environments also using anaconda
+	conda create --name rnd python      #rnd (name of env) # python (python version)
+
+	New Env created:
+		pip install -U pip setuptools # to install pip
+	https://conda.io/docs/user-guide/tasks/manage-environments.html
+	Rename env: conda create --name new_env_name --clone old_env_name
+	
+	install nLTK : sudo pip install -U nltk
+	install spacy: 
+		sudo apt-get install build-essential python-dev git(system level dependencies)
+		pip install spacy
+		python -m spacy validate
+		python -m spacy download en
+
+
+
+Install Vim:
+
+	sudo apt-get update
+	sudo apt-get install vim
+
+===============================================================================
+
+Git install:(installed in ubunut by default, but may be there is need):
+
+ sudo apt-get install git
+
+Install GitKraken
+
+
+# Git ssh key
+
+Enter "ls -al ~/.ssh" to see if existing SSH keys are present
+
+i. if not generate ssh key
+	ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+	This creates a new ssh key, using the provided email as a label.
+
+	When you're prompted to "Enter a file in which to save the key," press Enter. This accepts the default file location.
+
+ii. Adding your SSH key to the ssh-agent
+	i. ssh-agent -s
+	Add your SSH private key to the ssh-agent.
+	ii. ssh-add ~/.ssh/id_rsa
+iii. Adding a new SSH key to your GitHub account
+	i. sudo apt-get install xclip
+	ii. xclip -sel clip < ~/.ssh/id_rsa.pub
+	Key is generated copy it 
+	iii. cd .ssh
+	iv. cat id_rsa.pub
+	v. copy whole key and paste in github
+
+================================================================================
+Latex:
+	sudo apt-get install texlive-full
+	Install Tex studio
+	
+Java: 
+
+	sudo apt-add-repository ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt-get install oracle-java8-installer
+	java -version (check whether it is installed or not)
+
+	Ref: https://www.liquidweb.com/kb/how-to-install-oracle-java-8-on-ubuntu-14-04-lts/
+
+Eclipse:
+	https://www.eclipse.org/downloads/packages/release/neon/3
+	Select Eclipse IDE for Java Developers
+	Select Linux 64-bit (because my ubuntu is 64)
+	cd Downloads/eclipse
+	./eclipse
+
+
+
+Sublime: 
+	sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+	sudo apt-get update
+	sudo apt-get install -y sublime-text-installer
+
+To install sticky note:
+	sudo apt-get update
+	sudo apt-get install xpad	
+
+To install foxit reader:
+
+http://ubuntuhandbook.org/index.php/2015/09/install-foxit-reader-in-ubuntu/
+	
+
