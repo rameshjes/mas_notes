@@ -33,3 +33,10 @@ For python 2::
 
 	rmvirtualenv test_env01  // to remove environment
 
+
+For rename:
+
+      If you are virtualenvwrapper then :
+          cpvirtualenv old_name new_name
+	  rmvirtualenv old_name
+
