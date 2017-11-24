@@ -110,3 +110,13 @@ To install foxit reader:
 http://ubuntuhandbook.org/index.php/2015/09/install-foxit-reader-in-ubuntu/
 	
 
+
+============= =============================================
+MATLAB installation procedure:
+
+Create mathworks account from MATLAB official website
+Download Matlab2017b(or any recent version)
+extract the unzip file
+cd unzip directory 
+sudo ./install 
+There is also guideline file for installation when you download MATLAB from official website
