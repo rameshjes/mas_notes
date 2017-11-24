@@ -34,6 +34,18 @@ Anaconda
 		python -m spacy validate
 		python -m spacy download en
 
+	install opencv:
+		conda install -c menpo opencv
+	
+	install keras:
+		conda install -c conda-forge keras 
+		pip install np_utils(may be, if keras gives error)	
+		Restart terminal (because some times it does not updates)
+
+	install tensorflow:
+		pip install tensorflow 
+		
+
 
 
 Install Vim:
