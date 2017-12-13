@@ -88,7 +88,7 @@ iii. Adding a new SSH key to your GitHub account
 ================================================================================
 Latex:
 	sudo apt-get install texlive-full
-	Install Tex studio
+	sudo apt-get install texstudio
 	
 Java: 
 
