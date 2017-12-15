@@ -45,6 +45,9 @@ Anaconda
 	install tensorflow:
 		pip install tensorflow 
 		
+	install scikit-learn:
+		conda install scikit-learn (for conda environment)
+		pip install -U scikit-learn		
 
 
 
