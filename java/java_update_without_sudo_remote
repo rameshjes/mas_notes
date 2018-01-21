@@ -1,0 +1,15 @@
+# Update Java in Remote machine 
+
+* Initially java version 1.7 was installed
+
+* Download Java from https://www.java.com/en/download/linux_manual.jsp
+	Select "Linux x64"
+
+* Then, inside my server I have unpacked with:
+	tar -xvf jre-8u151-linux-x64.tar.gz
+
+* And then I have add the following line to my .bashrc file:
+	export PATH=/home/kkuma12s/jre1.8.0_151/bin:$PATH
+
+* Source bashrc file to make sure that changes affect
+
