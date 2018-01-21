@@ -1,0 +1,11 @@
+** Increase Java Heap Space
+
+Check Java Heap size :
+	java -XX:+PrintFlagsFinal -version | grep -iE 'HeapSize|PermSize|ThreadStackSize'
+
+
+change java heap size to 2 Gb by running command on terminal:
+	java -Xmx2048m
+
+Go to bashrc file, and paste:
+	export _JAVA_OPTIONS="-Xmx2048m"
