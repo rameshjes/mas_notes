@@ -1,0 +1,5 @@
+PicklingError: Can't pickle <type 'instancemethod'>: attribute lookup __builtin__.instancemethod failed
+
+install pathos
+
+pip install pathos
