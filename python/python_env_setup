@@ -5,6 +5,7 @@ source activate python3  // virtual env
 conda env list
 conda create --name rnd python      #rnd (name of env) # python (python version)
 
+conda remove --name myenv --all   #Conda remove environment (myenv: write here name of environment)
 	New Env created:
 		pip install -U pip setuptools # to install pip
 	https://conda.io/docs/user-guide/tasks/manage-environments.html
