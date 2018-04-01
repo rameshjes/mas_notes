@@ -47,7 +47,9 @@ Anaconda
 		
 	install scikit-learn:
 		conda install scikit-learn (for conda environment)
-		pip install -U scikit-learn		
+		pip install -U scikit-learn	
+
+	install	
 
 
 
