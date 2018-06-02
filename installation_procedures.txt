@@ -155,3 +155,12 @@ service solr status # run this command to check status of the server
 After running server >> Browser >> http://localhost:8983
 
 ====================================
+Install JavaFx 
+
+http://gluonhq.com/products/scene-builder/#download
+
+after download>> double click downloaded file 
+
+it will be installed /opt/scenebuilder/scenebuilder(this path you have to add in preferences>JavaFx (inside eclipse) )
+
+you can also install in eclipse using: Help > eclipse marketplace > search eclipse javaFx or E(fx) 
