@@ -111,7 +111,8 @@ Eclipse:
 	Select Linux 64-bit (because my ubuntu is 64)
 	cd Downloads/eclipse
 	./eclipse
-
+	
+	Liferay IDE Eclipse: https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/installing-liferay-ide
 
 
 Sublime: 
