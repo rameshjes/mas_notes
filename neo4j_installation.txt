@@ -1,0 +1,47 @@
+wget --no-check-certificate -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
+
+
+
+source; https://datawookie.netlify.com/blog/2016/09/installing-neo4j-on-ubuntu-16.04/
+
+
+After following installation steps from https://datawookie.netlify.com/blog/2016/09/installing-neo4j-on-ubuntu-16.04/ 
+
+start server: 
+
+	sudo service neo4j start
+
+Then go to browser -->> http://localhost:7474 
+
+ Enter default user name and pass: neo4j 
+ Change password according to your requirement
+
+
+stop server command: 
+
+	sudo service neo4j stop
+
+
+
+====== apoc neo4j ======
+
+https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases
+
+
+download it and paste it inside /var/lib/neo4j/plugins
+
+
+==== Load JSON =====
+
+call apoc.load.json($url) yield value
+unwind value.items as q
+merge (question:Question {title:q.title}) ON CREATE SET question.title = q.title, question.answered = q.is_answered
+merge(u:User {name:q.owner.display_name})
+merge (u)-[:ANSWERED_BY]->(question)
+foreach (t in q.tags | MERGE (tag:Tag {name:t}) MERGE (question)-[:TAGGED]->(tag))
+
+
+:param url:"https://api.stackexchange.com/2.2/questions?pagesize=100&order=desc&sort=creation&tagged=neo4j&site=stackoverflow&filter=!5-i6Zw8Y)4W7vpy91PMYsKM-k9yzEsSC1_Uxlf"
+
+match p = (n)
+foreach (per in nodes(p)| set n.Gender="M")
