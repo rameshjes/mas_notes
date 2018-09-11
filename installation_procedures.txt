@@ -111,7 +111,8 @@ Eclipse:
 	Select Linux 64-bit (because my ubuntu is 64)
 	cd Downloads/eclipse
 	./eclipse
-
+	
+	Liferay IDE Eclipse: https://dev.liferay.com/develop/tutorials/-/knowledge_base/7-0/installing-liferay-ide
 
 
 Sublime: 
@@ -139,3 +140,28 @@ extract the unzip file
 cd unzip directory 
 sudo ./install 
 There is also guideline file for installation when you download MATLAB from official website
+
+
+============================================================
+Solr installation procedure: 
+
+wget http://archive.apache.org/dist/lucene/solr/7.2.1/solr-7.2.1.tgz
+
+tar xzf solr-7.2.1.tgz solr-7.2.1/bin/install_solr_service.sh --strip-components=2
+
+sudo ./install_solr_service.sh solr-7.2.1.tgz 
+
+service solr status # run this command to check status of the server
+
+After running server >> Browser >> http://localhost:8983
+
+====================================
+Install JavaFx 
+
+http://gluonhq.com/products/scene-builder/#download
+
+after download>> double click downloaded file 
+
+it will be installed /opt/scenebuilder/scenebuilder(this path you have to add in preferences>JavaFx (inside eclipse) )
+
+you can also install in eclipse using: Help > eclipse marketplace > search eclipse javaFx or E(fx) 
