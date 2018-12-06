@@ -143,7 +143,7 @@ There is also guideline file for installation when you download MATLAB from offi
 
 
 ============================================================
-Solr installation procedure: 
+Solr installation procedure windows: 
 
 wget http://archive.apache.org/dist/lucene/solr/7.2.1/solr-7.2.1.tgz
 
@@ -155,8 +155,19 @@ service solr status # run this command to check status of the server
 
 After running server >> Browser >> http://localhost:8983
 
+
+Solr(4.5) insallation ubuntu 16.04
+
+wget http://archive.apache.org/dist/lucene/solr/4.5.0/solr-4.5.0.tgz
+tar -zxvf solr-4.5.0.tgz
+
+cd solr-4.5.0/example
+
+java -jar start.jar
 ====================================
 Install JavaFx 
+
+
 
 http://gluonhq.com/products/scene-builder/#download
 
