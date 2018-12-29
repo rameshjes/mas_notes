@@ -81,3 +81,8 @@
  To work around this issue, create the destination directory on the remote end first by typing mkdir localDirectory. Afterwards, the above command should complete without error.
 
  source:: https://www.digitalocean.com/community/tutorials/how-to-use-sftp-to-securely-transfer-files-with-a-remote-server
+ 
+ 
+ ## Mounting remote disk into local
+ 
+ https://www.cyberciti.biz/faq/how-to-mount-remote-directory-filesystems-with-sshfs-on-linux/
