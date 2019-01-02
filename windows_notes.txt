@@ -1,0 +1,2 @@
+* Ubuntu + windows (SSD + HDD) http://dailylinuxuser.com/2016/05/how-to-dual-boot-ubuntu-and-windows-10.html
+* Windows volume does not shrink completely (https://www.disk-partition.com/articles/shrink-volume-beyond-half-its-size-4348.html) 
