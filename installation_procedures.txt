@@ -176,3 +176,15 @@ after download>> double click downloaded file
 it will be installed /opt/scenebuilder/scenebuilder(this path you have to add in preferences>JavaFx (inside eclipse) )
 
 you can also install in eclipse using: Help > eclipse marketplace > search eclipse javaFx or E(fx) 
+
+
+=== apt-get install tomcat7 not working ====
+
+Add below two lines in /etc/apt/sources.list
+
+deb http://us.archive.ubuntu.com/ubuntu/ xenial main
+deb http://us.archive.ubuntu.com/ubuntu/ xenial universe
+
+Then run 
+sudo apt-get update
+sudo apt-get install tomcat7
