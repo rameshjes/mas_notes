@@ -40,3 +40,7 @@ For rename:
           cpvirtualenv old_name new_name
 	  rmvirtualenv old_name
 
+use python env(installed using workon) in jupyter notebook:
+	pip install ipykernel
+	ipython kernel install --user --name=projectname
+
