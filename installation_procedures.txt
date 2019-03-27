@@ -188,3 +188,5 @@ deb http://us.archive.ubuntu.com/ubuntu/ xenial universe
 Then run 
 sudo apt-get update
 sudo apt-get install tomcat7
+===
+pyspark install: https://medium.com/@GalarnykMichael/install-spark-on-ubuntu-pyspark-231c45677de0
