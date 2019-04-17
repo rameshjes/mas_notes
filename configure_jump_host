@@ -1,0 +1,15 @@
+First setup a jumphost in your laptop's ssh config file so that you do not have to ssh twice to setup the connections above. Edit .ssh/config file on your laptop in your home directory and add the following for example:
+
+Host s04
+  User username
+  HostName hostname
+  ProxyCommand ssh -W %h:%p firstuserserver@firstserverdomain
+
+This will work passwordlessly if you copy your ssh public keys to firstserverdomain and secondserver. Also copy the public key of firstserver machine to the second machine.
+
+Once you have setup the above simply typing ssh s04  should get you into second machine. If this is working fine then you can also scp files directly from your laptop to second server machines without touching the hard disks of firstServer machine. It passes in memory through the buffers in firstServer.
+
+
+Copy ssh public key of "local machine" in firstServer and secondServer >> ~/.ssh/authorized_keys
+
+copy ssh public key of "firstServer" in secondServer >> ~/.ssh/authorized_keys
