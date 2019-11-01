@@ -44,3 +44,14 @@ use python env(installed using workon) in jupyter notebook:
 	pip install ipykernel
 	ipython kernel install --user --name=projectname
 
+----
+Install virtualenvwrapper
+
+1. Install pip if not installed: ```sudo apt-get install python3-pip```
+2. Install virutalenv using ```sudo pip3 install virtualenv``` 
+3. source /usr/local/bin/virtualenvwrapper.sh
+4. Create environment ```mkvirtualenv -p python3 env_name```
+5. execute: ```workon``` (to list environment)
+
+source: https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b
+
