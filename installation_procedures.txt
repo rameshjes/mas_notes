@@ -2,6 +2,10 @@ Installation Nautilus
 
     sudo apt-get install nautilus-open-terminal
     Restart pc, it will work
+    
+Installation Terminator
+    sudo apt-get update
+    sudo apt-get install terminator
 
 Install chromium 
     
