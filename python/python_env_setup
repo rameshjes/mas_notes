@@ -42,7 +42,7 @@ For rename:
 
 use python env(installed using workon) in jupyter notebook:
 	pip install ipykernel
-	ipython kernel install --user --name=projectname
+	python -m ipykernel install --user --name project-name
 
 ----
 Install virtualenvwrapper
