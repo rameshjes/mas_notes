@@ -86,16 +86,20 @@
  ## Mounting remote disk into local
  
  https://www.cyberciti.biz/faq/how-to-mount-remote-directory-filesystems-with-sshfs-on-linux/
-
+```
 ssh -N -f -L localhost:8888:localhost:8889 remote_user@remote_host
+```
 
-kill port >> lsof -n -i4TCP:8889
-sudo netstat -anp | grep 8080
+kill port >> `lsof -n -i4TCP:8889`
 
-jupyter lab : ssh -N -f -L localhost:9991:wr15:9990 user@host	
+* `sudo netstat -anp | grep 8080`
+
+* `jupyter lab : ssh -N -f -L localhost:9991:wr15:9990 user@host`
+
 ## Porting forwarding through intermediate host
 
 Port forward from A to C ,==> A(user local) ==> B(server B) ===> C(server C)
-ssh -L 8080:localhost:8080 userB@hostB ssh -L 8080:localhost:8080 -N userC@hostC
-ssh -L 8080(port in B):localhost:8080(port in A) userB@hostB ssh -L 8080(port in C):localhost:8080(port in B) -N userC@hostC
+* `ssh -L 8080:localhost:8080 userB@hostB ssh -L 8080:localhost:8080 -N userC@hostC`
+
+* `ssh -L 8080(port in B):localhost:8080(port in A) userB@hostB ssh -L 8080(port in C):localhost:8080(port in B) -N userC@hostC`
 
